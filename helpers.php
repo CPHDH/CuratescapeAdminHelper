@@ -76,7 +76,7 @@ function cah_item_form_helper_text_array(){
 		'tabs'=> 
 			array( // tabs that need some helper text
 				array(
-				'text'=>'<p class="cah-helper">Use Dublin Core fields to add basic information, like the <strong>Title</strong>, <strong>Creator</strong> (Author), and <strong>Subjects</strong>. If you would like to utilize additional Dublin Core Fields, use the "Reveal" button below.</p>',
+				'text'=>'<p class="cah-helper">Use Dublin Core fields to add basic information, like the <strong>Title</strong>, <strong>Creator</strong> (Author), and <strong>Subjects</strong>. '.( get_option('cah_enable_item_file_toggle_dc' ) ? 'If you would like to utilize additional Dublin Core Fields, use the "Reveal" button below' : null).'</p>',
 				'insert_after'=>'.items.edit #dublin-core-metadata .set h2',
 				),
 				array(
