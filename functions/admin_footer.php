@@ -36,12 +36,12 @@
 	    
 	    // items
 		jQuery.each(form_mod_array.item_fields, function(i,id){
-			jQuery('.items.edit #element-'+id).removeClass('toggle-me').insertBefore('#dc-reveal').show();
+			jQuery('.items #edit-form #element-'+id).removeClass('toggle-me').insertBefore('#dc-reveal').show();
 		});
 	
 	    // fields
 		jQuery.each(form_mod_array.file_fields, function(i,id){
-			jQuery('.files.edit #element-'+id).removeClass('toggle-me').insertBefore('#dc-reveal').show();
+			jQuery('.files #edit-form #element-'+id).removeClass('toggle-me').insertBefore('#dc-reveal').show();
 		});
 	}
 </script>

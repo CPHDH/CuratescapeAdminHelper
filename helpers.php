@@ -77,27 +77,27 @@ function cah_item_form_helper_text_array(){
 			array( // tabs that need some helper text
 				array(
 				'text'=>'<p class="cah-helper">Use Dublin Core fields to add basic information, like the <strong>Title</strong>, <strong>Creator</strong> (Author), and <strong>Subjects</strong>. '.( get_option('cah_enable_item_file_toggle_dc' ) ? 'If you would like to utilize additional Dublin Core Fields, use the "Reveal" button below' : null).'</p>',
-				'insert_after'=>'.items.edit #dublin-core-metadata .set h2',
+				'insert_after'=>'.items #edit-form #dublin-core-metadata .set h2',
 				),
 				array(
 				'text'=>'<p class="cah-helper">Choose <strong>'.$it_name.'</strong> from the select menu to reveal Curatescape element fields.</p>',
-				'insert_after'=>'.items.edit #item-type-metadata-metadata .set h2',	
+				'insert_after'=>'.items #edit-form #item-type-metadata-metadata .set h2',	
 				),
 				array(
 				'text'=>'<p class="cah-helper">Upload files for the item. '.$it_name.' items should have at least one <strong>image</strong> file. Any <strong>audio</strong> files should be in the MP3 format. Any <strong>video</strong> files should be encoded as H.264 M4V files.<br><br><strong>Note:</strong> after files have been uploaded to the item record, please return to this page to add file-level metadata, including captions and source information. </p>',
-				'insert_after'=>'.items.edit #files-metadata .set h2',	
+				'insert_after'=>'.items #edit-form #files-metadata .set h2',	
 				),
 				array(
-				'text'=>'<p class="cah-helper">Add tags to tie your entries together according to common themes. <br><br><strong>Tip:</strong> in contrast to formal Subject terms, tags are often used more informally. <br><strong>Tip:</strong> it is recommended to use no more than 8-10 tags per item. <br><strong>Tip:</strong> avoid applying tags that are unlikely to be re-used.</p>',
-				'insert_after'=>'.items.edit #tags-metadata .set h2',	
+				'text'=>'<p class="cah-helper">Add tags to tie your entries together according to common themes. <br><br><strong>Tips:</strong> In contrast to formal Subject terms, tags are often used more informally. It is recommended to use no more than 8-10 tags per item. Avoid applying tags that are unlikely to be re-used.</p>',
+				'insert_after'=>'.items #edit-form #tags-metadata .set h2',	
 				),
 				array(
 				'text'=>'<p class="cah-helper">Add a <strong>location</strong> for the item by entering a search term and clicking "find" or by clicking on the map to manually add or move a marker.</p>',
-				'insert_after'=>'.items.edit #map-metadata .set h2',	
+				'insert_after'=>'.items #edit-form #map-metadata .set h2',	
 				),
 				array(
 				'text'=>'<p class="cah-helper">Use Dublin Core fields to add basic information, like the <strong>Title</strong>, <strong>Description</strong>, <strong>Creator</strong> (Author), <strong>Source</strong> and <strong>Date</strong>. If you would like to utilize additional Dublin Core Fields, use the "Reveal" button below.<br><br><strong>Note:</strong> This information is used to create file captions.</p>',
-				'insert_after'=>'.files.edit #dublin-core-metadata .set h2',	
+				'insert_after'=>'.files #edit-form #dublin-core-metadata .set h2',	
 				),				
 			),
 		'item_fields'=> 
