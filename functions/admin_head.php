@@ -44,4 +44,9 @@ $story_container='div#element-'.cah_get_element_id('Item Type Metadata','Story')
 		padding: 1em 0;
 		margin-bottom: 1em;
 	}
+	a:link.cah-file-edit{
+		text-align: center;
+		display: block;
+		padding-bottom: 3px;
+	}
 </style>

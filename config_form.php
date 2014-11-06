@@ -14,6 +14,7 @@
         	array(  	
 	        	array('name'=>'cah_enable_item_file_tab_notes','label'=>'Helper Notes','explanation'=>'Display Curatescape-related instructions, tips and other notes on the item and file forms.'),
 	        	array('name'=>'cah_enable_item_file_toggle_dc','label'=>'Toggle Metadata','explanation'=>'By default, only display Curatescape-related metadata fields on the item and file forms. (Other fields are still accessible with a single click.)'),
+	        	array('name'=>'cah_enable_file_edit_links','label'=>__('File Edit Links'),'explanation'=>__('Display "edit" links below each file on item records.')),
 	        	),
     );
     

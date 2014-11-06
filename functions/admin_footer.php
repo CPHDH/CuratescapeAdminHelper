@@ -6,6 +6,7 @@
 	var cah_enable_dashboard_components = <?php echo get_option('cah_enable_dashboard_components');?>;
 	var cah_enable_dashboard_resources = <?php echo get_option('cah_enable_dashboard_resources');?>;
 	var cah_enable_dashboard_stats = <?php echo get_option('cah_enable_dashboard_stats');?>;
+	var cah_enable_file_edit_links= <?php echo get_option('cah_enable_file_edit_links');?>;
 		
 	// Dashboard
 	var stats = jQuery('body.index #stats');
@@ -44,4 +45,13 @@
 			jQuery('.files #edit-form #element-'+id).removeClass('toggle-me').insertBefore('#dc-reveal').show();
 		});
 	}
+	
+	if(cah_enable_file_edit_links){
+		// file edit links
+		jQuery('.admin-thumb.panel a').each(function(){
+			var href = jQuery(this).attr('href').replace('show','edit');
+			jQuery(this).parentsUntil('#item-images').append('<a class="cah-file-edit" href="'+href+'">Edit file</a>');
+		});		
+	}
+	
 </script>
