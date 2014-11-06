@@ -15,17 +15,17 @@ $it_name=$it_info['name'];
 
 		<table>
 		    <thead>
-		    <th>Dublin Core</th>
-		    <th>Item Type</th>
+			    <th><?php echo __('Dublin Core');?></th>
+			    <th><?php echo __('Item Type');?></th>
 		    </thead>
 		    <tr>
-		    	<td>2nd Title</td><td>Subtitle</td>
+		    	<td><?php echo __('2nd Title');?></td><td><?php echo __('Subtitle');?></td>
 		    </tr>
 		    <tr>
-		    	<td>Description</td><td>Story</td>
+		    	<td><?php echo __('Description');?></td><td><?php echo __('Story');?></td>
 		    </tr>
 		     <tr>
-		    	<td>Relation</td><td>Related Resources</td>
+		    	<td><?php echo __('Relation');?></td><td><?php echo __('Related Resources');?></td>
 		    </tr>
 		</table>
 	                    

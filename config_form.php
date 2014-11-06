@@ -3,17 +3,17 @@
 <?php
 	 $options = array(
 		 
-	 		'Admin Dashboard Settings'=>
+	 		__('Admin Dashboard Settings')=>
 	 		array(
-	        	array('name'=>'cah_enable_dashboard_stats','label'=>'File Statistics','explanation'=>'Display file statistics on the dashboard.'),
-	        	array('name'=>'cah_enable_dashboard_resources','label'=>'Resources','explanation'=>'Display the Curatescape Resources widget on the dashboard.'),
-	        	array('name'=>'cah_enable_dashboard_components','label'=>'Components','explanation'=>'Display the Curatescape Components widget on the dashboard.'),
+	        	array('name'=>'cah_enable_dashboard_stats','label'=>__('File Statistics'),'explanation'=>__('Display file statistics on the dashboard.')),
+	        	array('name'=>'cah_enable_dashboard_resources','label'=>__('Resources'),'explanation'=>__('Display the Curatescape Resources widget on the dashboard.')),
+	        	array('name'=>'cah_enable_dashboard_components','label'=>__('Components'),'explanation'=>__('Display the Curatescape Components widget on the dashboard.')),
 	        	),
         	
-        	'Item and File form settings'=>
+        	__('Item and File form settings')=>
         	array(  	
-	        	array('name'=>'cah_enable_item_file_tab_notes','label'=>'Helper Notes','explanation'=>'Display Curatescape-related instructions, tips and other notes on the item and file forms.'),
-	        	array('name'=>'cah_enable_item_file_toggle_dc','label'=>'Toggle Metadata','explanation'=>'By default, only display Curatescape-related metadata fields on the item and file forms. (Other fields are still accessible with a single click.)'),
+	        	array('name'=>'cah_enable_item_file_tab_notes','label'=>__('Helper Notes'),'explanation'=>__('Display Curatescape-related instructions, tips and other notes on the item and file forms.')),
+	        	array('name'=>'cah_enable_item_file_toggle_dc','label'=>__('Toggle Metadata'),'explanation'=>__('By default, only display Curatescape-related metadata fields on the item and file forms. (Other fields are still accessible with a single click.)')),
 	        	array('name'=>'cah_enable_file_edit_links','label'=>__('File Edit Links'),'explanation'=>__('Display "edit" links below each file on item records.')),
 	        	),
     );
