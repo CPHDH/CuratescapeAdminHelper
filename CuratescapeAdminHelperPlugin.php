@@ -23,18 +23,20 @@ class CuratescapeAdminHelperPlugin extends Omeka_Plugin_AbstractPlugin
         'cah_enable_item_file_tab_notes' => 1,
         'cah_enable_item_file_toggle_dc' => 1,
         'cah_enable_file_edit_links' => 1,
+        'cah_theme_options_accordion'=>1,
     );
        
         
     public function hookConfig()
     {
 		// config form save
-        set_option('cah_enable_dashboard_stats', (int)(boolean)$_POST['cah_enable_dashboard_stats']); 
+        set_option('cah_enable_dashboard_stats', (int)(boolean)$_POST['cah_enable_dashboard_stats']);
         set_option('cah_enable_dashboard_resources', (int)(boolean)$_POST['cah_enable_dashboard_resources']); 
         set_option('cah_enable_dashboard_components', (int)(boolean)$_POST['cah_enable_dashboard_components']);
         set_option('cah_enable_item_file_tab_notes', (int)(boolean)$_POST['cah_enable_item_file_tab_notes']);
-        set_option('cah_enable_item_file_toggle_dc', (int)(boolean)$_POST['cah_enable_item_file_toggle_dc']); 
-        set_option('cah_enable_file_edit_links', (int)(boolean)$_POST['cah_enable_file_edit_links']);    
+        set_option('cah_enable_item_file_toggle_dc', (int)(boolean)$_POST['cah_enable_item_file_toggle_dc']);
+        set_option('cah_enable_file_edit_links', (int)(boolean)$_POST['cah_enable_file_edit_links']);  
+        set_option('cah_theme_options_accordion', (int)(boolean)$_POST['cah_theme_options_accordion']);
             
     }
 

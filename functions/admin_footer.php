@@ -7,6 +7,7 @@
 	var cah_enable_dashboard_resources = <?php echo get_option('cah_enable_dashboard_resources');?>;
 	var cah_enable_dashboard_stats = <?php echo get_option('cah_enable_dashboard_stats');?>;
 	var cah_enable_file_edit_links= <?php echo get_option('cah_enable_file_edit_links');?>;
+	var cah_theme_options_accordion= <?php echo get_option('cah_theme_options_accordion');?>;
 		
 	// Dashboard
 	var stats = jQuery('body.index #stats');
@@ -20,6 +21,21 @@
 		jQuery.each(form_mod_array.tabs, function(i,data){
 			jQuery(data.insert_after).after(data.text);
 		});
+	}
+	
+	// Use jQueryUI to create theme options accordion
+	if(cah_theme_options_accordion==1){
+		jQuery(".theme-configuration [id^='fieldset-']").each(function(i){
+			jQuery(this).children('.field').wrapAll('<div />');
+		 });
+		jQuery('fieldset').accordion({
+			header:'legend',
+			collapsible: true,
+			active: false,
+			heightStyleType: 'content',
+			});
+		jQuery('legend').css('width','92.6%');	
+		jQuery('.ui-accordion .ui-accordion-content').css('height','auto');
 	}
 	
 	// Re-order and re-style elements for items and files

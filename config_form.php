@@ -16,6 +16,11 @@
 	        	array('name'=>'cah_enable_item_file_toggle_dc','label'=>__('Toggle Metadata'),'explanation'=>__('By default, only display Curatescape-related metadata fields on the item and file forms. (Other fields are still accessible with a single click.)')),
 	        	array('name'=>'cah_enable_file_edit_links','label'=>__('File Edit Links'),'explanation'=>__('Display "edit" links below each file on item records.')),
 	        	),
+	        
+	        __('Theme Option settings')=>
+        	array(	
+	        	array('name'=>'cah_theme_options_accordion','label'=>__('Enhance form'),'explanation'=>__('Display theme options as a collapsible list of sections.')),
+	        	),
     );
     
 foreach($options as $section_title=>$infos){
