@@ -22,20 +22,28 @@
 			jQuery(data.insert_after).after(data.text);
 		});
 	}
-	
+
 	// Use jQueryUI to create theme options accordion
-	if(cah_theme_options_accordion==1){
-		jQuery(".theme-configuration [id^='fieldset-']").each(function(i){
-			jQuery(this).children('.field').wrapAll('<div />');
-		 });
-		jQuery('fieldset').accordion({
-			header:'legend',
-			collapsible: true,
-			active: false,
-			heightStyleType: 'content',
-			});
-		jQuery('legend').css('width','92.6%');	
-		jQuery('.ui-accordion .ui-accordion-content').css('height','auto');
+	function getParameterByName(name) {
+	    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+	    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+	        results = regex.exec(location.search);
+	    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+	}
+	if( (cah_theme_options_accordion==1) && (getParameterByName('name')=='curatescape') ){
+
+		
+			jQuery(".theme-configuration [id^='fieldset-']").each(function(i){
+				jQuery(this).children('.field').wrapAll('<div />');
+			 });
+			jQuery('fieldset').accordion({
+				header:'legend',
+				collapsible: true,
+				active: false,
+				heightStyleType: 'content',
+				});
+			jQuery('legend').css('width','92.6%');	
+			jQuery('.ui-accordion .ui-accordion-content').css('height','auto');
 	}
 	
 	// Re-order and re-style elements for items and files
