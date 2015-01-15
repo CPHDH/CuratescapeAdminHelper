@@ -12,13 +12,15 @@ if($custom['migration-helper']){
 	
 		// are we dealing with HTML?
 		$description_html=( strlen($description_text) != strlen(strip_tags($description_text) ) ) ? true : false;
+		
+		if(!metadata($item,array('Item Type Metadata','Story'))){ // if empty
 		update_item($item,
 			array('item_type_name'=>$it_name),
 			array('Item Type Metadata' =>
 				array('Story' =>
 				array(array('text' => $description_text, 'html' => $description_html))
 				))); 
-
+		}
 	}
 	
 	// Copy 2nd DC:Title to Subtitle
@@ -27,6 +29,7 @@ if($custom['migration-helper']){
 		// the second title field...
 		$subtitle_text=metadata($item, array('Dublin Core', 'Title'),array('index' => 1));
 		
+		if(!metadata($item,array('Item Type Metadata','Subtitle'))){ // if empty
 		update_item($item,
 			array('item_type_name'=>$it_name),
 			array('Item Type Metadata' =>
@@ -34,6 +37,7 @@ if($custom['migration-helper']){
 				array(array('text' => $subtitle_text, 
 					'html' => false))
 				))); 
+		}		
 
 
 	}
@@ -45,7 +49,7 @@ if($custom['migration-helper']){
 			
 			// are we dealing with HTML?
 			$relation_html = ( strlen($relation_text) != strlen(strip_tags($relation_text)) ) ? true : false;
-
+			if(!metadata($item,array('Item Type Metadata','Related Resources'))){ // if empty
 			update_item($item,
 				array('item_type_name'=>$it_name),
 				array('Item Type Metadata' =>
@@ -53,7 +57,8 @@ if($custom['migration-helper']){
 					array(array('text' => $relation_text, 'html' => $relation_html))
 					))); 
 								
-			}			
+			}
+		}			
 
 	}
 }
