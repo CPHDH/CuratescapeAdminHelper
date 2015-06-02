@@ -23,26 +23,45 @@ $story_container='div#element-'.cah_get_element_id('Item Type Metadata','Story')
 		content: "\f058";
 		color: #A4C637;
 	}
+	.fa-question-circle:after{
+		content:"\f059";
+		color:#fff;
+		padding: .25em;
+		font-style: normal;
+	}	
+	.tab-info{
+		background: #bbb;
+		color: #fff;
+		padding: .25em .5em .25em .25em;
+		float: right;	
+		display: inline-block;	
+	}	
 	<?php echo $story_container;?> textarea{
 		height:25em;
 	}
 	p.cah-helper{
 		font-style: italic;
-		padding:.5em;
-		background:#eaeaea;
+		padding:1em;
+		background:#fafafa;
+		margin-bottom: 1.5em;
+		margin-top: 0;
+		border-style: solid;
+		border-color: #bbb;
+		border-width: 7px 1px 1px;
 	}
 	.element-set-description{
-		font-size:0.85em;
+		display: none !important;
 	}
-	#dc-reveal{
-		background:#22546B;
-		background:linear-gradient(to bottom, #22546B, #102D3B) repeat scroll 0% 0% transparent;
-		clear: both;
-		cursor: pointer;
-		text-align: center;
-		color:#fff;
-		padding: 1em 0;
-		margin-bottom: 1em;
+	#dc-reveal {
+	    clear: both;
+	    cursor: pointer;
+	    text-align: right;
+	    color: #FFF;
+	    background: #BBB none repeat scroll 0% 0%;
+	    display: inline-block;
+	    float: right;
+	    padding: 0.25em 0.5em;
+	    font-style: italic;
 	}
 	a:link.cah-file-edit{
 		text-align: center;

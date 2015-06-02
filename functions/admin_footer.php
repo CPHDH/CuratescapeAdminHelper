@@ -19,7 +19,7 @@
 	if(cah_enable_item_file_tab_notes==1){
 		var form_mod_array=<?php echo cah_item_form_helper_text_array();?>;
 		jQuery.each(form_mod_array.tabs, function(i,data){
-			jQuery(data.insert_after).after(data.text);
+			jQuery(data.insert_point).after('<span class="tab-info"><span class="fa fa-question-circle"></span> How-to</span>'+data.text);
 		});
 	}
 
@@ -50,12 +50,13 @@
 	if(cah_enable_item_file_toggle_dc==1){
 		jQuery('#dublin-core-metadata .field').addClass('toggle-me').hide();
 		
-		jQuery('#dublin-core-metadata .element-set-description').after('<div id="dc-reveal">Reveal additional Dublin Core fields</div>');
+		jQuery('#dublin-core-metadata .element-set-description').after('<div id="dc-reveal">Looking for <strong>unused</strong> Dublin Core fields?</div>');
 		
 	    jQuery('#dc-reveal').click(function(){
 	        jQuery('#dublin-core-metadata .field.toggle-me').slideToggle();
-	        jQuery(this).text(function(i,text){
-		        return text === "Reveal additional Dublin Core fields" ? "Hide additional Dublin Core fields" : "Reveal additional Dublin Core fields";
+	        jQuery(this).html(function(i,text){
+		        var default_txt="Looking for <strong>unused</strong> Dublin Core fields?";
+		        return text === default_txt ? "Hide <strong>unused</strong> Dublin Core fields" : default_txt;
 	        });
 	    });
 	    
