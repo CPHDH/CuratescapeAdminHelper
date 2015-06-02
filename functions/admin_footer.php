@@ -82,5 +82,8 @@
 			jQuery(this).parentsUntil('#item-images').append('<a class="cah-file-edit" href="'+href+'">Edit file</a>');
 		});		
 	}
+
+	// Highlight the Curatescape item type in the dropdown
+	jQuery('select#item-type option:contains("<?php echo $it_name;?>")').css("background-color","yellow");
 	
 </script>
