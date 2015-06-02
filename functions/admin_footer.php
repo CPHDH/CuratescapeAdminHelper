@@ -1,3 +1,7 @@
+<?php
+	$it_info=cah_item_type();
+	$it_name=$it_info['name'];
+?>
 <script>
 	
 	// Plugin Options
