@@ -52,9 +52,9 @@
 	
 	// Re-order and re-style elements for items and files
 	if(cah_enable_item_file_toggle_dc==1){
-		jQuery('#dublin-core-metadata .field').addClass('toggle-me').hide();
+		jQuery('.items #dublin-core-metadata .field,.files #dublin-core-metadata .field').addClass('toggle-me').hide();
 		
-		jQuery('#dublin-core-metadata .element-set-description').after('<div id="dc-reveal">Looking for <strong>unused</strong> Dublin Core fields?</div>');
+		jQuery('.items #dublin-core-metadata .element-set-description,.files #dublin-core-metadata .element-set-description').after('<div id="dc-reveal">Looking for <strong>unused</strong> Dublin Core fields?</div>');
 		
 	    jQuery('#dc-reveal').click(function(){
 	        jQuery('#dublin-core-metadata .field.toggle-me').slideToggle();
