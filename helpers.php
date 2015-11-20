@@ -112,7 +112,8 @@ function cah_item_form_helper_text_array(){
 				cah_get_element_id('Dublin Core','Description'),
 				cah_get_element_id('Dublin Core','Creator'),
 				cah_get_element_id('Dublin Core','Source'),
-				cah_get_element_id('Dublin Core','Date'),				
+				cah_get_element_id('Dublin Core','Date'),
+				cah_get_element_id('Dublin Core','Rights'),				
 			),
 		);
 	
