@@ -200,7 +200,7 @@ function cah_components_guide(){
 	
 	
 	// Plugins
-	$required_plugins=array('Geolocation'=>true, 'SimplePages'=>false, 'TourBuilder'=>false, 'CuratescapeJSON'=>false, 'ImageTree'=>false);
+	$required_plugins=array('Geolocation'=>true, 'SimplePages'=>false, 'TourBuilder'=>false, 'CuratescapeJSON'=>false);
 	$active=0;
 	$text_plugin=null;
 	
