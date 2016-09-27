@@ -185,7 +185,7 @@ function cah_components_guide(){
 		
 	$theme = (( Theme::getTheme(Theme::getCurrentThemeName('public'))->title ) == 'Curatescape' );
 	
-	$text_theme = $theme ? '<li>The Curatescape theme is currently active. <a class="config" href="/admin/themes/config?name=curatescape">Configure theme settings</a></li>' : '<li>The Curatescape theme is not activated. Activate theme in <a href="/admin/themes/">Appearance settings</a>.</li>';
+	$text_theme = $theme ? '<li>The Curatescape theme is currently active. <a class="config" href="'.WEB_ROOT.'/admin/themes/config?name=curatescape">Configure theme settings</a></li>' : '<li>The Curatescape theme is not activated. Activate theme in <a href="'.WEB_ROOT.'/admin/themes/">Appearance settings</a>.</li>';
 	
 	$icon_ok = '<i class="fa fa-check-circle"></i>';
 	$icon_warning = '<i class="fa fa-exclamation-triangle"></i>';
@@ -207,10 +207,10 @@ function cah_components_guide(){
 	foreach($required_plugins as $name=>$config){
 		if(plugin_is_active($name)){
 			$active++;
-			$config_link = $config ? '<a class="config" href="/admin/plugins/config?name='.$name.'">Configure plugin settings</a>.' : null;
+			$config_link = $config ? '<a class="config" href="'.WEB_ROOT.'/admin/plugins/config?name='.$name.'">Configure plugin settings</a>.' : null;
 			$text_plugin.='<li>The '.$name.' plugin is currently active. '.$config_link.'</li>';
 		}else{
-			$text_plugin.='<li>The '.$name.' plugin is not activated. Activate plugin in <a href="/admin/plugins/">Plugins settings</a>.</li>';
+			$text_plugin.='<li>The '.$name.' plugin is not activated. Activate plugin in <a href="'.WEB_ROOT.'/admin/plugins/">Plugins settings</a>.</li>';
 		}
 	}
 	
