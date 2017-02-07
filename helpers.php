@@ -172,7 +172,7 @@ function cah_resources_guide(){
 	$html .= '<h4>Documentation</h4>';
 	$html .= '<p>For detailed information on setup, deployment, and usage, please visit <a href="http://curatescape.org/docs/">curatescape.org/docs</a> or contact your project manager.</p>';
 	$html .= '<h4>User Community</h4>';
-	$html .= '<p>Curatescape users are invited to join the <a href="https://groups.google.com/forum/#!forum/curatescape-users">Curatescape Users Google Group</a> (to prevent spam, approval is required). Curatescape is also on <a href="https://www.facebook.com/curatescape">Facebook</a> and <a href="https://twitter.com/curatescape">Twitter</a> .</p>';
+	$html .= '<p>Curatescape users are invited to join the <a href="http://forum.curatescape.org/">Curatescape Forum</a> (to prevent spam, approval is required). Curatescape is also on <a href="https://www.facebook.com/curatescape">Facebook</a> and <a href="https://twitter.com/curatescape">Twitter</a> .</p>';
 	$html .= '</div></section>';
 	
 	return $html;
