@@ -79,7 +79,7 @@
 		// file edit links
 		jQuery('.admin-thumb.panel a').each(function(){
 			var href = jQuery(this).attr('href').replace('show','edit');
-			jQuery(this).parentsUntil('#item-images').append('<a class="cah-file-edit" href="'+href+'">Edit file</a>');
+			jQuery(this).parentsUntil('#item-images').append('<a target="_blank" class="cah-file-edit" href="'+href+'">Edit file</a>');
 		});		
 	}
 
