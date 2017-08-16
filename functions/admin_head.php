@@ -68,4 +68,7 @@ $story_container='div#element-'.cah_get_element_id('Item Type Metadata','Story')
 		display: block;
 		padding-bottom: 3px;
 	}
+	.ui-widget-content p.explanation a{
+		text-decoration: underline;
+	}
 </style>
