@@ -14,10 +14,10 @@ Installing the plugin automaticalls adds a new item type called "Curatescape Sto
 - Access Information
 
 ## Options
-After installation, you can disable or remove the plugin, but keeping it installed will give you the following options.
-- Display file statistics on the dashboard
-- Display the Curatescape Resources widget on the dashboard
-- Display the Curatescape Components widget on the dashboard
+After installation, you may disable or remove the plugin if you like, but keeping it installed will give you access to the following options, which may be helpful for managing your Curatescape site:
+- Display file statistics on the dashboard (i.e. count of files by media type)
+- Display the Curatescape Resources widget on the dashboard (links to useful resources)
+- Display the Curatescape Components widget on the dashboard (notes on missing plugins and other required settings)
 - Display Curatescape-related instructions, tips and other notes on the item and file forms
 - Display _only_ the main Curatescape-related metadata fields on the item and file forms (other fields are still accessible with a single click)
 - Display "Edit" links below each file on item records
