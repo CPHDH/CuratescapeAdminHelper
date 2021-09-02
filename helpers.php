@@ -189,7 +189,7 @@ function cah_get_file_info(){
 function cah_resources_guide(){
 
 	$html  = null;
-	$html .= '<section class="ten columns alpha"><div class="panel">';
+	$html .= '<section class="five columns alpha"><div class="panel">';
 	$html .= '<h2>'.__('Curatescape Resources').'</h2><br>';
 	$html .= '<h4>'.__('Documentation').'</h4>';
 	$html .= '<p>'.__('For detailed information on setup, deployment, and usage, please visit <a href="https://curatescape.org/docs/">curatescape.org/docs</a> or contact your project manager').'</p>';
@@ -213,7 +213,7 @@ function cah_components_guide(){
 	$icon_warning = '<i class="fa fa-exclamation-triangle"></i>';
 	
 	$html  = null;
-	$html .= '<section class="ten columns alpha"><div class="panel">';
+	$html .= '<section class="five columns omega"><div class="panel">';
 	$html .= '<h2>'.__('Curatescape Components').'</h2><br>';
 	$html .= '<h4>'.__('Theme Settings').' '.($theme ? $icon_ok : $icon_warning).'</h4>';
 	$html .= '<ul>';
