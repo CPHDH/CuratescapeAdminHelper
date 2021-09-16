@@ -53,7 +53,8 @@
 				active: false,
 				heightStyleType: 'content',
 				});
-			jQuery('fieldset').css('border-bottom','1px solid #ccc');	
+			jQuery('fieldset').css('border-bottom','1px solid #ccc');
+			jQuery('fieldset').css('width','100%');
 			jQuery('.ui-accordion .ui-accordion-content').css('height','auto');
 	}
 	
