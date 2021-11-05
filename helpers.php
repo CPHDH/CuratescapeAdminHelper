@@ -204,8 +204,7 @@ function cah_resources_guide(){
 function cah_components_guide(){
 	
 	// Theme
-		
-	$theme = (( Theme::getTheme(Theme::getCurrentThemeName('public'))->title ) == 'Curatescape' );
+	$theme = (strpos(Theme::getTheme(Theme::getCurrentThemeName('public'))->title, 'Curatescape') === 0);
 	
 	$text_theme = $theme ? '<li>'.__('The Curatescape theme is currently active.').' '.__('<a class="config" href="%s">Configure theme settings</a>',WEB_ROOT.'/admin/themes/config?name=curatescape').'</li>' : '<li>'.__('The Curatescape theme is not activated. Activate theme in <a href="%s">Appearance settings</a>.',WEB_ROOT.'/admin/themes/').'</li>';
 	

@@ -43,7 +43,7 @@
 	        results = regex.exec(location.search);
 	    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
 	}
-	if( (cah_theme_options_accordion==1) && (getParameterByName('name')=='curatescape') ){
+	if( (cah_theme_options_accordion==1) && (getParameterByName('name').includes('curatescape')) ){
 			jQuery(".theme-configuration [id^='fieldset-']").each(function(i){
 				jQuery(this).children('.field').wrapAll('<div />');
 			 });
