@@ -12,7 +12,7 @@ class CuratescapeAdminHelperPlugin extends Omeka_Plugin_AbstractPlugin
         'config_form',
         'uninstall',
         'upgrade',
-        );
+    );
 
     protected $_options = array(
         'cah_enable_dashboard_stats' => 1,
@@ -50,21 +50,18 @@ class CuratescapeAdminHelperPlugin extends Omeka_Plugin_AbstractPlugin
         
     public function hookAdminHead()
     {
-        
         // header scripts: admin styles
         require dirname(__FILE__) . '/functions/admin_head.php';
     }
 
     public function hookAdminFooter()
     {
-        
         // footer scripts: admin dashboard enhancements
         require dirname(__FILE__) . '/functions/admin_footer.php';
     }
 
     public function hookInstall()
     {
-        
         // install scripts: plugin options
         $this->_installOptions();
         
