@@ -22,11 +22,6 @@
                 array('name'=>'cah_theme_options_accordion','label'=>__('Enhance form'),'explanation'=>__('Display theme options as a collapsible list of sections.')),
                 ),
                 
-            __('Advanced settings')=>
-            array(
-                array('name'=>'cah_theme_options_batch_convert','label'=>__('Migration Helper'),'explanation'=>__('Display an option to batch-convert existing items to the Curatescape Story item type, migrating content from Dublin Core fields to related custom Item Type fields. <br><br><strong>Note:</strong> this option is <em>not recommended</em> for most projects. Please contact your project manager for more information.')),
-                ),
-                
     );
     
 foreach ($options as $section_title=>$infos) {
