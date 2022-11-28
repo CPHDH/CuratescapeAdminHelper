@@ -18,6 +18,10 @@
         array(
             array('name'=>'cah_theme_options_accordion','label'=>__('Enhance form'),'explanation'=>__('Display theme options as a collapsible list of sections.')),
         ),
+        __('User Management options')=>
+        array(
+            array('name'=>'cah_inactive_users_helper','label'=>__('Inactive Users Link'),'explanation'=>__('Display an option next to inactive users allowing a site administrator to copy the activation link (in order to send via alternate means).')),
+        ),
     );
     
 foreach ($options as $section_title=>$infos) {
