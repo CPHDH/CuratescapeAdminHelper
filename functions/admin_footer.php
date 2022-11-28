@@ -15,10 +15,18 @@
 	if(is_current_url('/admin/users') && $inactive_users_helper){
 		$protocol = $_SERVER['HTTPS'] == 'on' ? 'https' : 'http';
 		$host = $_SERVER['HTTP_HOST'];
-		$ua = get_records('UsersActivations');
 		$user_activations = array();
-		foreach($ua as $user){
-			$user_activations[] = array('id'=>$user['user_id'],'url'=>$protocol.'://'.$host.'/admin/users/activate?u='.$user['url']);
+		$u = get_records('User',array(
+			'active'=>'0'),false);
+		foreach($u as $user){
+			$ua = get_record('UsersActivations',array(
+				'user_id'=>$user['id'],
+				'sort_field'=>'added',
+				'sort_dir'=>'d'));
+			if($ua){
+				$user_activations[] = array('id'=>$user['id'],'url'=>$protocol.'://'.$host.'/admin/users/activate?u='.$ua['url']);
+			}
+			
 		}
 		$inactive_users = json_encode($user_activations);
 	}
@@ -116,7 +124,7 @@
 	// add links to copy user activation links for inactive users
 	if(cah_inactive_users.length){
 		cah_inactive_users.forEach((user)=>{
-			let user_delete_button = jQuery('li a[href="/admin/users/delete-confirm/'+user['id']+'"]');
+			let user_delete_button = jQuery('.inactive li a[href="/admin/users/delete-confirm/'+user['id']+'"]');
 			if(user_delete_button){
 				user_delete_button = user_delete_button.parent();
 				let li = document.createElement('li');
