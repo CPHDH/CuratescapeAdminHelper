@@ -34,7 +34,7 @@
 ?>
 <script>
 	// Plugin Options
-	var cah_inactive_users = <?php echo $inactive_users ? $inactive_users : json_encode([]);?>;
+	var cah_inactive_users = <?php echo isset($inactive_users) ? $inactive_users : json_encode([]);?>;
 	var cah_enable_item_file_tab_notes = <?php echo get_option('cah_enable_item_file_tab_notes');?>;
 	var cah_enable_item_file_toggle_dc = <?php echo get_option('cah_enable_item_file_toggle_dc');?>;
 	var cah_enable_dashboard_components = <?php echo get_option('cah_enable_dashboard_components');?>;
