@@ -56,9 +56,9 @@ $use_html_supported = $element_info['use_html_supported'];
 		border-top: 1px dashed #ccc;
 	}
 	.fa{
-		font-family:"Font Awesome 5 Free"
+		font-family:"Font Awesome 5 Free";
 	}
-	.fa-exclamation-triangle:after,	 
+	.fa-exclamation-triangle:after,
 	.fa-check-circle:after{
 		font-style: normal;
 		font-weight: lighter;
@@ -66,7 +66,7 @@ $use_html_supported = $element_info['use_html_supported'];
 		line-height:0em;
 		vertical-align: middle;
 		padding-left: .25em;
-		text-shadow:0 0 2px #fff;		
+		text-shadow:0 0 2px #fff;
 	}
 	.fa-exclamation-triangle:after{
 		content:"\f256";
@@ -107,16 +107,16 @@ $use_html_supported = $element_info['use_html_supported'];
 		display: none !important;
 	}
 	#dc-reveal {
-	    clear: both;
-	    cursor: pointer;
-	    text-align: center;
-	    color: #FFF;
-	    background: #777;
-	    display: block;
-	    padding: 0.75em 0.5em;
-	    font-style: italic;
-	    border-radius:7px;
-	    margin-bottom: 1em;
+		clear: both;
+		cursor: pointer;
+		text-align: center;
+		color: #FFF;
+		background: #777;
+		display: block;
+		padding: 0.75em 0.5em;
+		font-style: italic;
+		border-radius:7px;
+		margin-bottom: 1em;
 	}
 	a:link.cah-file-edit{
 		text-align: center;
