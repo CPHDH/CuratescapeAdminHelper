@@ -8,6 +8,11 @@ $use_html_supported = $element_info['use_html_supported'];
 	<?php echo $story_container;?> textarea{
 		height:25em;
 	}
+	<?php if (get_option('cah_inactive_users_helper')=='1'): ?>
+		li:has(.delete-confirm){
+			padding-right: 3px;
+		}
+	<?endif; ?>
 	<?php if (get_option('cah_hide_html_checkbox_where_unsupported')=='1'): ?>
 		/* selective "use html" */	
 		label.use-html{
